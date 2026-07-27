@@ -8,11 +8,157 @@
     </title>
     <meta charset="utf-8">
     <!--informs the browser how to interpet the text on the document, ensuring consistent rendering across devices without corruption-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 
 <body>
-    <p>
-        <img src="img/Rhymes_I_Scheme.jpg" style="border: solid 5px #816F96;" />
+  <header role="banner" class="primary">
+    <h1><a href="index.html">Mars Rovers</a></h1>
+    <h2>The Exploration of the Red Planet</h2>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission_history.html">Mission History</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="content" class="container">
+    <h2>Welcome to the Mars: Exploring the Red Planet with NASA’s Rovers</h2>
+    <p>For decades, NASA has been exploring the mysteries of Mars, sending robotic rovers across its rocky terrain in
+      search of answers to some of humanity’s biggest questions:
+      Is there life beyond Earth? What can Mars teach us about our own planet?
     </p>
+    <p>
+      From the groundbreaking Pathfinder mission in 1997 to the cutting-edge Perseverance rover currently traversing
+      Jezero Crater, these robotic explorers have revolutionized our understanding of the Red Planet. Each mission has
+      built upon the last—testing new technologies, uncovering signs of ancient water, and paving the way for future
+      human exploration.
+
+    </p>
+    <p>
+
+      This site is your launchpad into the world of NASA’s Mars rovers. Learn about the design and goals of each
+      mission, discover the incredible science they’ve uncovered, and find out how these trailblazing robots are helping
+      write the next chapter in space exploration.
+
+    </p>
+  </section>
+  <section id="articles">
+    <div class="container">
+      <h2>Rovers</h2>
+
+      <div class="fade">
+
+        <!-- Curiosity -->
+        <article class="post">
+          <header>
+            <figure>
+              <img src="https://assets.codepen.io/7248/curiosity.jpg"
+                alt="A stunning selfie of the Curiosity rover with Mont Mercou in the background.">
+              <figcaption>Curiosity</figcaption>
+            </figure>
+
+            <h2>
+              <a href="#" rel="bookmark">Curiosity</a>
+            </h2>
+          </header>
+
+          <ul>
+            <li>Conducts detailed analysis of Martian rocks and soil to assess past habitability</li>
+            <li>Discovered evidence of ancient freshwater environments in Gale Crater</li>
+            <li>Monitors radiation levels to help prepare for future human missions</li>
+            <li>Uses advanced onboard lab to detect organic compounds and chemical signatures</li>
+            <li>Continues long-term climate and radiation monitoring on Mars</li>
+          </ul>
+        </article>
+
+        <!-- Opportunity -->
+        <article class="post">
+          <header>
+            <figure>
+              <img src="https://assets.codepen.io/7248/opportunity.jpg" alt="Opportunity Rover">
+              <figcaption>Opportunity</figcaption>
+            </figure>
+
+            <h2>
+              <a href="#" rel="bookmark">Opportunity</a>
+            </h2>
+          </header>
+
+          <ul>
+            <li>Traveled over 28 miles across the Martian surface</li>
+            <li>Provided strong evidence that liquid water once existed on Mars</li>
+            <li>Studied rock layers that revealed past wet environmental conditions</li>
+            <li>Operated for nearly 15 years despite a planned 90-day mission</li>
+          </ul>
+        </article>
+
+        <!-- Spirit -->
+        <article class="post">
+          <header>
+            <figure>
+              <img src="https://assets.codepen.io/7248/spirit-rover.jpg" alt="Spirit Rover">
+              <figcaption>Spirit</figcaption>
+            </figure>
+
+            <h2>
+              <a href="#" rel="bookmark">Spirit</a>
+            </h2>
+          </header>
+
+          <ul>
+            <li>Explored Gusev Crater, investigating signs of past volcanic activity</li>
+            <li>Discovered evidence of ancient hot springs and hydrothermal systems</li>
+            <li>Collected detailed panoramic images of Martian terrain</li>
+            <li>Became stuck in soft soil but continued stationary scientific observations</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <aside role="complementary">
+    <div class="container">
+      <article class="widget">
+        <header>
+          <h2>Background</h2>
+        </header>
+        <p>
+          The NASA Mars rover program is a pioneering effort to explore the Red Planet using robotic vehicles designed
+          to traverse its surface and conduct scientific experiments. Beginning with Sojourner in 1997, the program has
+          since launched a series of increasingly advanced rovers, including Spirit, Opportunity, Curiosity, and
+          Perseverance. Each mission has contributed vital data about Mars’ geology, climate, and potential for past or
+          present life.
+        </p>
+        <footer>Widget Footer</footer>
+      </article>
+    </div>
+  </aside>
+  <footer id="colophon" role="contentinfo">
+    <h3>&copy; 2026 Adyn Cunningham | <a href="mailto:alcunningha2@ualr.edu"> Report a Problem</a></h3>
+    <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing
+      this work.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="../js/script.js"></script>
 </body>
+
+</html>
