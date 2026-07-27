@@ -3,6 +3,11 @@
 
 /* ---------------Box Sizing----------------- */
 
+aside article.widget img {
+  display: block;
+  margin: 20px auto;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -579,4 +584,6 @@ footer#colophon {
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
+
+  
 }
