@@ -572,7 +572,7 @@ footer#colophon {
 /* Better image sizing */
 .fade .post img {
   width: 100%;
-  max-height: 350px;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
