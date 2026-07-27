@@ -1,0 +1,575 @@
+
+
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+}
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- Utility Styles ---- */
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  max-width: 33%;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* ----- Global Styles ---- */
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  background-color: #181c1f;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  padding: 3em 2em 2em;
+  position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url(../img/PIA24311~medium.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url("https://assets.codepen.io/7248/nasa-opt.webp");
+  display: block;
+  width: 376px;
+  height: 110px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header.primary h2 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  /* Shorhand Three Value Top, Left/Right, Bottom*/
+  margin: 10px auto 20px;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+
+}
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  background-color: #565878;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.6s;
+  display: block;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: #7a89a8;
+  color: #f2f2f2;
+}
+
+/* ------------- Content --------------- */
+
+section#content {
+  padding: 4em 0;
+}
+
+section#content h2 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  color: #565878;
+}
+
+section#content h3 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  color: #565878;
+  font-size: 1.5rem;
+}
+
+section#content table {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+}
+
+section#content caption {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 10px;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #33536b;
+}
+
+section#content th {
+  background: #181C1F;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+}
+
+section#content td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+section#content tr:nth-child(even) {
+  background: #DCDCDC;
+}
+
+section#content tr:hover {
+  background: #adb2d3;
+}
+
+.post {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  /* divider line */
+}
+
+.post:last-of-type {
+  border-bottom: none;
+  /* removes divider after last section */
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ------------- Articles --------------- */
+
+section#articles {
+  background: #181c1f;
+}
+
+section#articles .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 0 0 4em 0;
+}
+
+section#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  color: #33536b;
+  text-align: center;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+section#articles h2 {
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+#articles article.post {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#articles article.post h2 {
+  font-size: 1.5em;
+  text-shadow: none;
+}
+
+#articles article.post:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+  font-size: 0.8em;
+  color: #c0c0c0;
+  text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+  color: #adb2d3;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  border-radius: 10px;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+
+#articles li {
+  margin-bottom: 20px;
+}
+
+/* ------------- Hero --------------- */
+
+#hero {
+  padding: 4em 0;
+}
+
+/* ------------- Aside --------------- */
+
+/* Attribute Selector */
+aside[role="complementary"] {
+  background-color: #181c1f;
+  color: #ffffff;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+aside article.widget {
+  flex: 1;
+}
+
+.widget.overview table {
+  font-size: 0.7em;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mission-page aside .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-page .widget.overview {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.mission-page .widget.overview table td {
+  border-bottom: 1px solid #fff;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.widget.overview table td {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+.widget.overview table td:nth-child(even) {
+  text-align: right;
+}
+
+aside article a:link,
+aside article a:visited {
+  color: #ffffff;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+  display: none;
+}
+
+/*------ Footer ------*/
+
+footer#colophon {
+  background-color: #33536b;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23181c1f' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#colophon h3 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#colophon h3 a:link,
+#colophon h3 a:visited {
+  color: #fff;
+}
+
+#colophon p {
+  color: #fff;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+
+  section#articles .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+  }
+
+  #articles article.post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  aside .container {
+    flex-direction: column;
+  }
+
+}
+
+/* ---------------- Contact Page ---------------- */
+
+.contact-page main {
+  padding: 3rem 0;
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page h3 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+}
+
+.contact-page #contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Aside styling consistency */
+.contact-page aside {
+  background-color: #181c1f;
+  color: white;
+  padding: 2rem;
+}
+
+.contact-page aside .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-page aside .widget {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ---------- Slick Carousel ---------- */
+
+.fade {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.fade .post {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+/* Remove weird slick spacing */
+.slick-list {
+  padding: 0 !important;
+}
+
+.slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: white;
+}
+
+/* Dots */
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  color: white;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #adb2d3;
+  opacity: 1;
+}
+
+/* Better image sizing */
+.fade .post img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
