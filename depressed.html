@@ -6,29 +6,28 @@
     <title>
         Da Big Chud
     </title>
+
     <meta charset="utf-8">
-    <!--informs the browser how to interpet the text on the document, ensuring consistent rendering across devices without corruption-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="icon" href="./img/Favicon.png" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body class="rain-page">
 
-    <img src="./img/depressed.png" alt="Depressed" class="depressed-image">
+    <div class="rain-container">
+
+        <canvas id="rain"></canvas>
+
+        <img src="./img/depressed.png" alt="Depressed" class="depressed-image">
+
+        <audio id="rainSound" loop>
+            <source src="./audio/rain.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <script src="./js/index.js"></script>
 
 </body>
+
+</html>
