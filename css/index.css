@@ -81,8 +81,10 @@ header.primary {
 
 header.primary::before {
   content: "";
-  background-image: url(../img/PIA24311~medium.jpg);
-  background-size: cover;
+  background-image: url(../img/Screenshot\ 2026-05-28\ at\ 8.14.23\ PM.png);
+  background-size: contain;
+  width: auto;
+  height: auto;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -99,10 +101,11 @@ header.primary h1 {
 
 header.primary h1 a {
   color: #ffffff;
-  background-image: url("https://assets.codepen.io/7248/nasa-opt.webp");
+  background-image: url(https://preview.redd.it/badass-skeletons-v0-dhxq17t9jg2d1.jpg?width=640&crop=smart&auto=webp&s=9ed5558f21e72fc8729a65dfdbc77879b37180bd);
+  background-size:contain;
   display: block;
-  width: 376px;
-  height: 110px;
+  width: auto;
+  height: auto;
   margin: 0 auto;
   text-indent: 100%;
   white-space: nowrap;
