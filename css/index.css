@@ -71,7 +71,7 @@ body {
 }
 
 header.primary {
-  background-color: #181c1f;
+  background-color: #FF6F21;
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px #000000;
@@ -165,13 +165,13 @@ section#content {
 section#content h2 {
   font-family: "Quantico", sans-serif;
   font-weight: 700;
-  color: #565878;
+  color: #FF6F21;
 }
 
 section#content h3 {
   font-family: "Quantico", sans-serif;
   font-weight: 700;
-  color: #565878;
+  color: #FF6F21;
   font-size: 1.5rem;
 }
 
@@ -192,7 +192,7 @@ section#content caption {
 }
 
 section#content th {
-  background: #181C1F;
+  background: #A1FF00;
   color: #ffffff;
   text-align: left;
   padding: 10px;
@@ -204,7 +204,7 @@ section#content td {
 }
 
 section#content tr:nth-child(even) {
-  background: #DCDCDC;
+  background: #A1FF00;
 }
 
 section#content tr:hover {
@@ -237,7 +237,7 @@ summary {
 /* ------------- Articles --------------- */
 
 section#articles {
-  background: #181c1f;
+  background: #A1FF00;
 }
 
 section#articles .container {
@@ -252,7 +252,7 @@ section#articles .container {
 section#articles h2,
 #content h2 {
   flex: 0 0 100%;
-  color: #33536b;
+  color: #FF26A9;
   text-align: center;
   font-family: "Quantico", sans-serif;
   font-weight: 700;
@@ -270,7 +270,7 @@ section#articles h2 {
   transition: 0.6s;
   font-size: 0.8rem;
   border-radius: 10px;
-  background: #fff;
+  background: #FF26A9;
 }
 
 #articles article.post h2 {
@@ -323,7 +323,7 @@ section#articles h2 {
 
 /* Attribute Selector */
 aside[role="complementary"] {
-  background-color: #181c1f;
+  background-color: #FF26A9;
   color: #ffffff;
   padding: 2.5em;
 }
@@ -394,7 +394,7 @@ aside article footer {
 /*------ Footer ------*/
 
 footer#colophon {
-  background-color: #33536b;
+  background-color: #FF6F21;
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23181c1f' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
