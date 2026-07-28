@@ -616,6 +616,8 @@ footer#colophon {
 }
 
 .DVD-page {
+    Background-image: url(../img/Roku_city.jpeg);
+    background-size:auto;
     margin: 0;
     overflow: hidden;
     height: 100vh;
